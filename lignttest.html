@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
+        }
+
+        const a1 = ['请开启前照灯'];
+        const a6 = ['通过急弯', '通过坡路', '通过拱桥', '通过人行横道', '通过没有交通信号灯控制的路口'];
+        const a8 = ['在无照明灯道路行驶', '在照明不良的道路行驶'];
+        const a9 = ['路边临时停车'];
+        const a10 = ['请关闭所有灯光'];
+
+        function du() {
+            alert(a1[0])
+            for (var i = 0; i < 6; i++) {
+                let x = getRandomInt(0, a28.length);
+                alert(a28[x]);
+                a28.splice(x, 1);
+            }
+            alert(a9[0]);
+            alert(a10[0]);
+        }
+
+
+        function du6() {
+            let y = getRandomInt(0, 4);
+            return a6[y];
+        }
+
+
+        function du8() {
+            let z = getRandomInt(0, 1);
+            return a8[z]
+        }
+
+        var a28 = ['同方向近距离更车行驶', '与机动车会车', '通过有信号灯控制的路口', '在有路灯良好的路上行驶', '超越前方车辆', du6(), du8()];
+
+        du()
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
